@@ -74,6 +74,10 @@ h6 a {
   transition: .4s;
 }
 
+.email:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
 @media (hover: hover) {
   a:hover {
     color: #7260E7;

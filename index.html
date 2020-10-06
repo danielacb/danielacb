@@ -63,7 +63,10 @@
         </a>
       </li>
     </ul>
-    <h6>Get in touch <a href="">hello@danielacb.com</a></h6>
+    <h6>Get in touch
+      <a href="#" class="email" data-name="hello" data-domain="danielacb" data-tld="com"
+        onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+    </h6>
   </header>
 
   <script src="js/script.js"></script>
