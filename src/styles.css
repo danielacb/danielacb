@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(
+        300deg,
+        rgba(255, 209, 182, 1) 0%,
+        rgba(255, 231, 217, 1) 90%
+    );
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Volkhov', serif;
+    color: #4d4775;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 960px;
+    width: calc(100% - 40px);
+    text-align: center;
+    margin-top: 40px;
+    pointer-events: none;
+}
+
+header img {
+    max-width: 160px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 21px;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 16px;
+}
+
+p {
+    margin-top: 16px;
+    font-size: 36px;
+    opacity: 0.9;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #4d4775;
+    transition: 0.4s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li + li {
+    margin-left: 20px;
+}
+
+h6 a {
+    color: #4d4775;
+    transition: 0.4s;
+}
+
+.email:after {
+    content: attr(data-name) '@' attr(data-domain) '.' attr(data-tld);
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: #7260e7;
+    }
+
+    svg:hover {
+        fill: #7260e7;
+    }
+}
+
+@media (min-width: 580px) {
+    header {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
