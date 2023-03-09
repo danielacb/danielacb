@@ -61,10 +61,12 @@ window.addEventListener('mousemove', (event) => {
 })
 
 function animate(time) {
-    camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 2
-    camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 2
-    camera.position.y = cursor.y * 2
-    camera.lookAt(renderer.domElement)
+    if (window.matchMedia('(hover: hover)').matches) {
+        camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 2
+        camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 2
+        camera.position.y = cursor.y * 2
+        camera.lookAt(renderer.domElement)
+    }
 
     controls.update()
     renderer.render(scene, camera)

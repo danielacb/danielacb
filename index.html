@@ -10,53 +10,67 @@
         <link rel="stylesheet" href="./src/styles.css" />
     </head>
     <body>
-        <header>
-            <img src="images/daniela-c-barbosa.jpg" alt="Daniela C. Barbosa" />
-            <h1>Daniela C. Barbosa</h1>
-            <p>
-                Hello! My name is Daniela, I’m a UI Designer and Front-end
-                developer working remotely from Brazil!
-            </p>
-        </header>
-        <footer>
-            <ul>
-                <li>
-                    <a href="https://dribbble.com/danielacb" target="_blank">
-                        <svg>
-                            <use xlink:href="images/social.svg#dribbble"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/danielacb" target="_blank">
-                        <svg id="social">
-                            <use xlink:href="images/social.svg#github"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
+        <div class="wrapper">
+            <header>
+                <img
+                    src="images/daniela-c-barbosa.jpg"
+                    alt="Daniela C. Barbosa"
+                />
+                <h1>Daniela C. Barbosa</h1>
+                <p>
+                    Hello! My name is Daniela, I’m a Front-end Developer and UI
+                    Designer working remotely from Brazil!
+                </p>
+            </header>
+            <footer>
+                <ul>
+                    <li>
+                        <a
+                            href="https://dribbble.com/danielacb"
+                            target="_blank"
+                        >
+                            <svg>
+                                <use
+                                    xlink:href="images/social.svg#dribbble"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/danielacb" target="_blank">
+                            <svg id="social">
+                                <use
+                                    xlink:href="images/social.svg#github"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/cbdaniela/"
+                            target="_blank"
+                        >
+                            <svg id="social">
+                                <use
+                                    xlink:href="images/social.svg#linkedin"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <h6>
+                    Get in touch
                     <a
-                        href="https://www.linkedin.com/in/cbdaniela/"
-                        target="_blank"
-                    >
-                        <svg id="social">
-                            <use xlink:href="images/social.svg#linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <h6>
-                Get in touch
-                <a
-                    href="#"
-                    class="email"
-                    data-name="hello"
-                    data-domain="danielacb"
-                    data-tld="com"
-                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"
-                ></a>
-            </h6>
-        </footer>
+                        href="#"
+                        class="email"
+                        data-name="hello"
+                        data-domain="danielacb"
+                        data-tld="com"
+                        onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"
+                    ></a>
+                </h6>
+            </footer>
+        </div>
         <script
             async
             src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"

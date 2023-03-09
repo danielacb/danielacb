@@ -11,13 +11,20 @@ body {
     color: #4d4775;
 }
 
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
     margin: 0 auto;
-    max-width: 960px;
-    width: calc(100% - 40px);
     text-align: center;
     margin-top: 40px;
-    pointer-events: none;
 }
 
 header img {
@@ -40,9 +47,10 @@ h6 {
 }
 
 p {
-    margin-top: 16px;
-    font-size: 36px;
+    margin: 16px auto;
+    font-size: 32px;
     opacity: 0.9;
+    max-width: calc(100% - 48px);
 }
 
 svg {
@@ -53,10 +61,10 @@ svg {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: 64px;
     width: 100%;
     text-align: center;
+    pointer-events: all;
 }
 
 ul {
@@ -93,11 +101,10 @@ h6 a {
 
 @media (min-width: 580px) {
     header {
-        margin-top: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin-top: 120px;
+    }
+    p {
+        max-width: 840px;
     }
 }
 
