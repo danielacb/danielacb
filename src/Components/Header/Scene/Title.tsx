@@ -22,8 +22,8 @@ export default function Title() {
     setOffset([x, y])
   })
 
-  const scale = width > 6 ? width / 1200 : width / 720
-  const positionY = width > 6 ? 0.5 : 1
+  const scale = width > 6 ? width / 1100 : width / 720
+  const positionY = width > 6 ? 0.25 : 1
 
   return (
     <Center position={[0, positionY, 0.1]}>

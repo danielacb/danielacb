@@ -1,3 +1,30 @@
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    width: 60%;
+    filter: blur(80px);
+  }
+  70% {
+    opacity: 0.7;
+    width: 55%;
+    filter: blur(75px);
+  }
+  to {
+    opacity: 1;
+    width: 60%;
+    filter: blur(80px);
+  }
+}
+
 .header {
   width: 100%;
   max-height: 100svh;
@@ -54,7 +81,6 @@
 }
 
 .orangeGradient {
-  width: 60%;
   height: 200px;
   position: absolute;
   left: 50%;
@@ -64,7 +90,8 @@
   background-color: var(--orange);
   transform: translate(-50%, 50%);
   z-index: 3;
-  filter: blur(80px);
+
+  animation: opacity 1s, pulse 6s infinite;
 }
 
 .dcb {
@@ -79,7 +106,7 @@
 
 .loaderContainer {
   width: 100%;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 100px);
   position: absolute;
   z-index: 5;
   display: flex;

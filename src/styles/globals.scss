@@ -3,6 +3,7 @@
   --blue: #111e33;
   --dark-black: #131318;
   --black: #15151d;
+  --white: #f3f3f3;
   --dark-gray: #1f1f26;
   --gray: #a1a1a5;
   --orange: #ff4a00;
@@ -22,7 +23,7 @@ body {
 }
 
 body {
-  font-family: var(--font-inconsolata);
+  font-family: var(--font-dm-mono);
   background: var(--dark-black);
 }
 
@@ -38,12 +39,19 @@ h1 {
 a {
   color: inherit;
   text-decoration: none;
+  font-family: inherit;
 }
 
 p {
-  font-family: var(--font-inconsolata);
+  font-family: var(--font-dm-mono);
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
 }
 
 main {

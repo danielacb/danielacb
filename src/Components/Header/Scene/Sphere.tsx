@@ -40,7 +40,7 @@ void main() {
 const fragmentShader = `
 uniform float uTime;
 
-float speed = 0.5;
+float speed = 1.0;
 float scale = 2.0;
 float intensity = 0.4;
 float noiseScale = 1.8;
@@ -68,7 +68,7 @@ float noise (in vec2 _st) {
     return mix(a, b, u.x) + (c - a)* u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
 }
 
-#define NUM_OCTAVES 10
+#define NUM_OCTAVES 3
 
 float fbm ( in vec2 _st) {
   float v = 0.0;
