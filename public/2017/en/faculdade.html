@@ -1,262 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    
-    <link rel="shortcut icon" href="../assets/img/favicon/favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../assets/img/favicon/57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/114x114.png">
-    
+
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="../assets/img/favicon/57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/img/favicon/72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/img/favicon/114x114.png"
+    />
+
     <title>Daniela C. Barbosa - Graphic Design</title>
-    
-    <meta name="description" content="Portfolio Daniela C. Barbosa Graphic Designer" />
-    <meta name="keywords" content="graphic design, design, Daniela C. Barbosa, editorial, visual identity, print, digital, web design, designer, ui design, ux design" />
+
+    <meta
+      name="description"
+      content="Portfolio Daniela C. Barbosa Graphic Designer"
+    />
+    <meta
+      name="keywords"
+      content="graphic design, design, Daniela C. Barbosa, editorial, visual identity, print, digital, web design, designer, ui design, ux design"
+    />
     <meta property="og:url" content="http://danielacb.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Portfolio Daniela C. Barbosa" />
     <meta property="og:description" content="Portfolio Daniela C. Barbosa" />
-    <meta property="og:image" content="http://danielacb.com/assets/img/meta-image-daniela-c-barbosa.jpg" />
-    
-    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.fancybox.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    
-<!--
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:483640,hjsv:5};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-    <script type="text/javascript">
-        window.smartlook||(function(d) {
-        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
-        })(document);
-        smartlook('init', 'f7209de733626828b02fa77029551f7b12d52278');
-    </script>
--->
-    
-</head>
+    <meta
+      property="og:image"
+      content="assets/img/meta-image-daniela-c-barbosa.jpg"
+    />
 
-<body>
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+  </head>
+
+  <body>
     <div id="preloader">
-        <div id="status">
-            <div class="pulseloader"></div>
-            <p>loading...</p>
-        </div>
+      <div id="status">
+        <div class="pulseloader"></div>
+        <p>loading...</p>
+      </div>
     </div>
     <nav id="menu-overlay">
-        <button class="close">X</button>
-        <h4>Menu</h4>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">About me</a></li>
-                <li><a href="#contato" class="anchor">Contact</a></li>
-                <li><a href="../faculdade.html" class="language">versão em português</a></li>
-            </ul>
-        </nav>
-        <ul class="social">
-               <li><a href="https://dribbble.com/danielacb" class="dribbble" target="_blank"></a></li>
-               <li><a href="https://www.facebook.com/danicbarbosa" class="facebook" target="_blank"></a></li>
-               <li><a href="https://www.instagram.com/danictudo/" class="instagram" target="_blank"></a></li>
-               <li><a href="https://www.linkedin.com/in/cbdaniela/" class="linkedin" target="_blank"></a></li>
-               <li><a href="https://vimeo.com/danielacb" class="vimeo" target="_blank"></a></li>
-           </ul>
-        <button class="window"></button>
-    </nav>
-   <div id="menu" class="animate">
-       <a href="index.html"></a>
-       <button>Menu</button>
-   </div>
-   <header class="interna faculdade">
-       <nav id="topo">
-           <ul class="social">
-               <li><a href="https://dribbble.com/danielacb" class="dribbble" target="_blank"></a></li>
-               <li><a href="https://www.facebook.com/danicbarbosa" class="facebook" target="_blank"></a></li>
-               <li><a href="https://www.instagram.com/danictudo/" class="instagram" target="_blank"></a></li>
-               <li><a href="https://www.linkedin.com/in/cbdaniela/" class="linkedin" target="_blank"></a></li>
-               <li><a href="https://vimeo.com/danielacb" class="vimeo" target="_blank"></a></li>
-           </ul>
-           <ul class="nav-left">
-              <li><a href="index.html">home</a></li>
-               <li><a href="sobre.html">about me</a></li>
-               <li><a href="#contato" class="anchor">contact</a></li>
-               <li><a href="../faculdade.html" class="btn1">português</a></li>
-           </ul>
-       </nav>
-       <div class="parallax"></div>
-        <div id="dots-01" class="parallax" data-depth="3"></div>
-        <div id="dots-02" class="parallax" data-depth="2"></div>
-        <div id="dots-01-yellow" class="parallax" data-depth="3"></div>
-        <div id="dots-02-yellow" class="parallax" data-depth="2"></div>
-        <div class="intro">
-            <h1 class="animate slideUp">College Assignments</h1>
-        </div>
-   </header>
-   <section class="animate slideUp">
-        <div class="container-text">
-            <h2>Introduction</h2>
-            <p>I got my Graphic Design degree from Universidade Federal de Goiás (Federal University of Goiás), elected the best Graphic Design school among the public institutions by a publication called <a href="http://guiadoestudante.abril.com.br/" target="_blank">Guia do Estudante</a> (Students Guide). But it wasn’t just that, I also took a lot of other courses in other institutions to learn Adobe’s softwares, HTML and CSS.</p>
-        </div>
-   </section>
-    <div class="animate center preview">
-       <h5 class="animate">Preview</h5>
-       <div id="slider-preview">
-           <a href="../assets/img/projetos/faculdade/guerra-paz.jpg" class="slide" data-fancybox="faculdade-preview"  data-caption="Guerra e Paz Poster"><img src="../assets/img/projetos/faculdade/slides/guerra-paz.jpg" alt="Guerra e Paz Poster"></a>
-           <a href="../assets/img/projetos/faculdade/cartaz-137.jpg" class="slide" data-fancybox="faculdade-preview"  data-caption="Poster 137 Graus R Erupção"><img src="../assets/img/projetos/faculdade/slides/cartaz-137.jpg" alt="Poster 137 Graus R Erupção"></a>
-           <a href="../assets/img/projetos/faculdade/dvd-lost.jpg" class="slide" data-fancybox="faculdade-preview"  data-caption="Lost DVD Box"><img src="../assets/img/projetos/faculdade/slides/dvd-lost.jpg" alt="Lost DVD Box"></a>
-           <a href="../assets/img/projetos/faculdade/caixa-lost.jpg" class="slide" data-fancybox="faculdade-preview"  data-caption="Lost Collection"><img src="../assets/img/projetos/faculdade/slides/caixa-lost.jpg" alt="Lost Collection"></a>
-           <a href="../assets/img/projetos/faculdade/terra-celta.jpg" class="slide" data-fancybox="faculdade-preview"  data-caption="Terra Celta Album Cover"><img src="../assets/img/projetos/faculdade/slides/terra-celta.jpg" alt="Terra Celta Album Cover"></a>
-       </div>
-   </div>
-   <section class="box">
-       <h3 class="animate">Details</h3>
-        <section class="container-text">
-            <h4 class="animate">Portinari Exposition Poster</h4>
-            <p class="animate">It was an exercise from the Brazilian Art History class, we needed to design a poster for a fictitious exposition from a Brazilian artist of our choosing.</p>
-            <p class="animate">I chose <a href="http://www.portinari.org.br/" target="_blank">Cândido Portinari</a> and his <a href="http://www.gradedtalon.com/3637/news/war-and-peace-restored-in-the-un-headquarters/" target="_blank">“War and Peace”</a> panels painted for the United Nations Headquarters as a gift from the Brazilian government. I was inspired by its colors contrasts and the fact that they are formed by 28 smaller pieces.</p>
-            <div class="center animate">
-                <a href="../assets/img/projetos/faculdade/guerra-paz.jpg" class="slide" data-fancybox="faculdade"  data-caption="Guerra e Paz Poster"><img src="../assets/img/projetos/faculdade/small/guerra-paz.jpg" alt="Guerra e Paz Poster" class="animate"></a>
-            </div>
-        </section>
-        <section class="container-text">
-            <h4 class="animate">"Delegação 137º" Poster</h4>
-            <p class="animate">A poster made to promote a trip to “Caldas Novas”, a city considered by many to be the largest hydro-thermal resort in the world, and also for its extinct volcano. That is why I used harm colors and the fire flames inspired lettering.</p>
-            <div class="center animate">
-                <a href="../assets/img/projetos/faculdade/cartaz-137.jpg" class="slide" data-fancybox="faculdade"  data-caption="Poster 137 Graus R Erupção"><img src="../assets/img/projetos/faculdade/small/cartaz-137.jpg" alt="Poster 137 Graus R Erupção" class="animate"></a>
-            </div>
-        </section>
-        <section class="container-text">
-            <h4 class="animate">Lost Collection</h4>
-            <p class="animate">For the Packaging class we could choose a product to work with and my choice was to design a special edition for a Lost Collection of DVDs, inspired by a lot of the events on the TV show story. You can check the entire process <a href="../files/images/projetos/faculdade/Projeto-Embalagem-Daniela-C-Barbosa-Lost.pdf" target="_blank">here</a>.</p>
-            <div class="center">
-                <a href="../assets/img/projetos/faculdade/dvd-lost.jpg" class="slide" data-fancybox="faculdade"  data-caption="Lost DVD Box"><img src="../assets/img/projetos/faculdade/small/dvd-lost.jpg" alt="Lost DVD Box" class="animate"></a>
-               <a href="../assets/img/projetos/faculdade/caixa-lost.jpg" class="slide" data-fancybox="faculdade"  data-caption="Lost Collection"><img src="../assets/img/projetos/faculdade/small/caixa-lost.jpg" alt="Lost Collection" class="animate"></a>
-            </div>
-        </section>
-        <section class="container-text">
-            <h4 class="animate">"Terra Celta" Album cover</h4>
-            <p class="animate">In this exercise we were required to redesign a album cover for a band that our professor randomly chose for each one of us. I end up with a band with an Irish inspired kind of music and most of the lyrics were about beer.</p>
-            <p class="animate">Knowing this, I decided to design the cover to look like the Guinness label, the famous Irish dry stout beer, and added a green background just like a Saint Patrick’s Day flag would be.</p>
-            <div class="center">
-               <a href="../assets/img/projetos/faculdade/Guinness_Special_Export_Rotulo-500x500.jpg" class="slide" data-fancybox="faculdade"  data-caption="Rótulo Cervaja Guinnes"><img src="../assets/img/projetos/faculdade/small/Guinness_Special_Export_Rotulo-500x500.jpg" alt="Rótulo Cervaja Guinnes" class="animate"></a>
-               <a href="../assets/img/projetos/faculdade/terra-celta.jpg" class="slide" data-fancybox="faculdade"  data-caption="Terra Celta Album Cover"><img src="../assets/img/projetos/faculdade/small/terra-celta.jpg" alt="Terra Celta Album Cover" class="animate"></a>
-            </div>
-        </section>
-   </section>
-   <section>
-       <h2 class="animate slideUp">More Work</h2>
-       <div id="bg-portfolio"></div>
-       <ul class="grid relacionados">
-            <li>
-                <a href="zebrabold.html" class="projeto" data-bg="zebrabold"> <img src="../assets/img/projetos/zebrabold-thumb.jpg" class="shadow animate slideUp" alt="Intership at Zebrabold Design">
-                    <div class="intro">
-                        <h4>Zebrabold</h4>
-                        <p>Internship</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="asu.html" class="projeto" data-bg="asu"> <img src="../assets/img/projetos/asu-thumb.jpg" class="shadow animate slideUp" alt="Exchange Program at Arizona State University">
-                    <div class="intro">
-                        <h4>ASU</h4>
-                        <p>Exchange Program</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="b2.html" class="projeto" data-bg="b2"> <img src="../assets/img/projetos/b2-thumb.jpg" class="shadow animate slideUp" alt="B2 Agência full time job">
-                    <div class="intro">
-                        <h4>B2 Agência</h4>
-                        <p>Full time Job</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="tre.html" class="projeto" data-bg="tre"> <img src="../assets/img/projetos/tre-thumb.jpg" class="shadow animate slideUp" alt="Intership at Tribubnal Regional Eleitoral">
-                    <div class="intro">
-                        <h4>TRE</h4>
-                        <p>Internship</p>
-                    </div>
-                </a>
-            </li>
+      <button class="close">X</button>
+      <h4>Menu</h4>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">About me</a></li>
+          <li><a href="#contato" class="anchor">Contact</a></li>
+          <li>
+            <a href="../faculdade.html" class="language">versão em português</a>
+          </li>
         </ul>
-        <a href="index.html" class="btn2 animate">view work</a>
-   </section>
-   <section id="sobre-mim">
-       <h2 class="animate">About me</h2>
-       <div class="row">
-            <div class="container">
-                <aside class="animate slideLeft">
-                    <div class="foto"> <img src="../assets/img/perfil-dcb.jpg" alt="Daniela C. Barbosa" class="shadow">
-                        <h6>Name</h6>
-                        <p>Daniela C. Barbosa</p>
-                        <h6>Age</h6>
-                        <p>26 years old</p>
-                        <h6>College Degree</h6>
-                        <p>Graphic Design (UFG)</p>
-                        <div class="center"> <a href="cv-danielacb-english.pdf" target="_blank" class="btn3">full resume</a> </div>
-                    </div>
-                </aside>
-                <div class="bio animate slideRight">
-                    <p>&gt;&gt; Hello, my name is Daniela and I’m 26 years old, I’m from Goiânia, Goiás, currently living in São Paulo.</p>
-                    <p>I have a college degree in Graphic Design and have been working in this field since 2011 and now I’m searching for a job opportunity to work with Digital Design.</p>
-                </div>
-            </div>
-        </div>
-        <a href="sobre.html" class="btn2 animate">view more</a>
-   </section>
-   <footer id="contato">
-       <h2 class="animate">Contact</h2>
+      </nav>
+      <ul class="social">
+        <li>
+          <a
+            href="https://dribbble.com/danielacb"
+            class="dribbble"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/danicbarbosa"
+            class="facebook"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/danictudo/"
+            class="instagram"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/cbdaniela/"
+            class="linkedin"
+            target="_blank"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://vimeo.com/danielacb"
+            class="vimeo"
+            target="_blank"
+          ></a>
+        </li>
+      </ul>
+      <button class="window"></button>
+    </nav>
+    <div id="menu" class="animate">
+      <a href="index.html"></a>
+      <button>Menu</button>
+    </div>
+    <header class="interna faculdade">
+      <nav id="topo">
+        <ul class="social">
+          <li>
+            <a
+              href="https://dribbble.com/danielacb"
+              class="dribbble"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/danicbarbosa"
+              class="facebook"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/danictudo/"
+              class="instagram"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/cbdaniela/"
+              class="linkedin"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://vimeo.com/danielacb"
+              class="vimeo"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+        <ul class="nav-left">
+          <li><a href="index.html">home</a></li>
+          <li><a href="sobre.html">about me</a></li>
+          <li><a href="#contato" class="anchor">contact</a></li>
+          <li><a href="../faculdade.html" class="btn1">português</a></li>
+        </ul>
+      </nav>
+      <div class="parallax"></div>
+      <div id="dots-01" class="parallax" data-depth="3"></div>
+      <div id="dots-02" class="parallax" data-depth="2"></div>
+      <div id="dots-01-yellow" class="parallax" data-depth="3"></div>
+      <div id="dots-02-yellow" class="parallax" data-depth="2"></div>
+      <div class="intro">
+        <h1 class="animate slideUp">College Assignments</h1>
+      </div>
+    </header>
+    <section class="animate slideUp">
+      <div class="container-text">
+        <h2>Introduction</h2>
+        <p>
+          I got my Graphic Design degree from Universidade Federal de Goiás
+          (Federal University of Goiás), elected the best Graphic Design school
+          among the public institutions by a publication called
+          <a href="http://guiadoestudante.abril.com.br/" target="_blank"
+            >Guia do Estudante</a
+          >
+          (Students Guide). But it wasn’t just that, I also took a lot of other
+          courses in other institutions to learn Adobe’s softwares, HTML and
+          CSS.
+        </p>
+      </div>
+    </section>
+    <div class="animate center preview">
+      <h5 class="animate">Preview</h5>
+      <div id="slider-preview">
+        <a
+          href="../assets/img/projetos/faculdade/guerra-paz.jpg"
+          class="slide"
+          data-fancybox="faculdade-preview"
+          data-caption="Guerra e Paz Poster"
+          ><img
+            src="../assets/img/projetos/faculdade/slides/guerra-paz.jpg"
+            alt="Guerra e Paz Poster"
+        /></a>
+        <a
+          href="../assets/img/projetos/faculdade/cartaz-137.jpg"
+          class="slide"
+          data-fancybox="faculdade-preview"
+          data-caption="Poster 137 Graus R Erupção"
+          ><img
+            src="../assets/img/projetos/faculdade/slides/cartaz-137.jpg"
+            alt="Poster 137 Graus R Erupção"
+        /></a>
+        <a
+          href="../assets/img/projetos/faculdade/dvd-lost.jpg"
+          class="slide"
+          data-fancybox="faculdade-preview"
+          data-caption="Lost DVD Box"
+          ><img
+            src="../assets/img/projetos/faculdade/slides/dvd-lost.jpg"
+            alt="Lost DVD Box"
+        /></a>
+        <a
+          href="../assets/img/projetos/faculdade/caixa-lost.jpg"
+          class="slide"
+          data-fancybox="faculdade-preview"
+          data-caption="Lost Collection"
+          ><img
+            src="../assets/img/projetos/faculdade/slides/caixa-lost.jpg"
+            alt="Lost Collection"
+        /></a>
+        <a
+          href="../assets/img/projetos/faculdade/terra-celta.jpg"
+          class="slide"
+          data-fancybox="faculdade-preview"
+          data-caption="Terra Celta Album Cover"
+          ><img
+            src="../assets/img/projetos/faculdade/slides/terra-celta.jpg"
+            alt="Terra Celta Album Cover"
+        /></a>
+      </div>
+    </div>
+    <section class="box">
+      <h3 class="animate">Details</h3>
+      <section class="container-text">
+        <h4 class="animate">Portinari Exposition Poster</h4>
+        <p class="animate">
+          It was an exercise from the Brazilian Art History class, we needed to
+          design a poster for a fictitious exposition from a Brazilian artist of
+          our choosing.
+        </p>
+        <p class="animate">
+          I chose
+          <a href="http://www.portinari.org.br/" target="_blank"
+            >Cândido Portinari</a
+          >
+          and his
+          <a
+            href="http://www.gradedtalon.com/3637/news/war-and-peace-restored-in-the-un-headquarters/"
+            target="_blank"
+            >“War and Peace”</a
+          >
+          panels painted for the United Nations Headquarters as a gift from the
+          Brazilian government. I was inspired by its colors contrasts and the
+          fact that they are formed by 28 smaller pieces.
+        </p>
         <div class="center animate">
-            <p><span>E-mail:</span> <a href="mailto:contato@danielacb.com">hireme@danielacb.com</a></p>
-            <p><span>Phone:</span> &plus;55 (11) 98103-8204</p>
-            <p><span>WhatsApp:</span> &plus;55 (62) 98102-9102</p>
-            <ul class="social">
-                <li><a href="https://dribbble.com/danielacb" class="dribbble" target="_blank"></a></li>
-                <li><a href="https://www.facebook.com/danicbarbosa" class="facebook" target="_blank"></a></li>
-                <li><a href="https://www.instagram.com/danictudo/" class="instagram" target="_blank"></a></li>
-                <li><a href="https://www.linkedin.com/in/cbdaniela/" class="linkedin" target="_blank"></a></li>
-                <li><a href="https://vimeo.com/danielacb" class="vimeo" target="_blank"></a></li>
-            </ul>
+          <a
+            href="../assets/img/projetos/faculdade/guerra-paz.jpg"
+            class="slide"
+            data-fancybox="faculdade"
+            data-caption="Guerra e Paz Poster"
+            ><img
+              src="../assets/img/projetos/faculdade/small/guerra-paz.jpg"
+              alt="Guerra e Paz Poster"
+              class="animate"
+          /></a>
         </div>
-        <p class="center">Copyright © 2017 Daniela C. Barbosa</p>
-   </footer>
-    
+      </section>
+      <section class="container-text">
+        <h4 class="animate">"Delegação 137º" Poster</h4>
+        <p class="animate">
+          A poster made to promote a trip to “Caldas Novas”, a city considered
+          by many to be the largest hydro-thermal resort in the world, and also
+          for its extinct volcano. That is why I used harm colors and the fire
+          flames inspired lettering.
+        </p>
+        <div class="center animate">
+          <a
+            href="../assets/img/projetos/faculdade/cartaz-137.jpg"
+            class="slide"
+            data-fancybox="faculdade"
+            data-caption="Poster 137 Graus R Erupção"
+            ><img
+              src="../assets/img/projetos/faculdade/small/cartaz-137.jpg"
+              alt="Poster 137 Graus R Erupção"
+              class="animate"
+          /></a>
+        </div>
+      </section>
+      <section class="container-text">
+        <h4 class="animate">Lost Collection</h4>
+        <p class="animate">
+          For the Packaging class we could choose a product to work with and my
+          choice was to design a special edition for a Lost Collection of DVDs,
+          inspired by a lot of the events on the TV show story. You can check
+          the entire process
+          <a
+            href="../files/images/projetos/faculdade/Projeto-Embalagem-Daniela-C-Barbosa-Lost.pdf"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+        <div class="center">
+          <a
+            href="../assets/img/projetos/faculdade/dvd-lost.jpg"
+            class="slide"
+            data-fancybox="faculdade"
+            data-caption="Lost DVD Box"
+            ><img
+              src="../assets/img/projetos/faculdade/small/dvd-lost.jpg"
+              alt="Lost DVD Box"
+              class="animate"
+          /></a>
+          <a
+            href="../assets/img/projetos/faculdade/caixa-lost.jpg"
+            class="slide"
+            data-fancybox="faculdade"
+            data-caption="Lost Collection"
+            ><img
+              src="../assets/img/projetos/faculdade/small/caixa-lost.jpg"
+              alt="Lost Collection"
+              class="animate"
+          /></a>
+        </div>
+      </section>
+      <section class="container-text">
+        <h4 class="animate">"Terra Celta" Album cover</h4>
+        <p class="animate">
+          In this exercise we were required to redesign a album cover for a band
+          that our professor randomly chose for each one of us. I end up with a
+          band with an Irish inspired kind of music and most of the lyrics were
+          about beer.
+        </p>
+        <p class="animate">
+          Knowing this, I decided to design the cover to look like the Guinness
+          label, the famous Irish dry stout beer, and added a green background
+          just like a Saint Patrick’s Day flag would be.
+        </p>
+        <div class="center">
+          <a
+            href="../assets/img/projetos/faculdade/Guinness_Special_Export_Rotulo-500x500.jpg"
+            class="slide"
+            data-fancybox="faculdade"
+            data-caption="Rótulo Cervaja Guinnes"
+            ><img
+              src="../assets/img/projetos/faculdade/small/Guinness_Special_Export_Rotulo-500x500.jpg"
+              alt="Rótulo Cervaja Guinnes"
+              class="animate"
+          /></a>
+          <a
+            href="../assets/img/projetos/faculdade/terra-celta.jpg"
+            class="slide"
+            data-fancybox="faculdade"
+            data-caption="Terra Celta Album Cover"
+            ><img
+              src="../assets/img/projetos/faculdade/small/terra-celta.jpg"
+              alt="Terra Celta Album Cover"
+              class="animate"
+          /></a>
+        </div>
+      </section>
+    </section>
+    <section>
+      <h2 class="animate slideUp">More Work</h2>
+      <div id="bg-portfolio"></div>
+      <ul class="grid relacionados">
+        <li>
+          <a href="zebrabold.html" class="projeto" data-bg="zebrabold">
+            <img
+              src="../assets/img/projetos/zebrabold-thumb.jpg"
+              class="shadow animate slideUp"
+              alt="Intership at Zebrabold Design"
+            />
+            <div class="intro">
+              <h4>Zebrabold</h4>
+              <p>Internship</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="asu.html" class="projeto" data-bg="asu">
+            <img
+              src="../assets/img/projetos/asu-thumb.jpg"
+              class="shadow animate slideUp"
+              alt="Exchange Program at Arizona State University"
+            />
+            <div class="intro">
+              <h4>ASU</h4>
+              <p>Exchange Program</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="b2.html" class="projeto" data-bg="b2">
+            <img
+              src="../assets/img/projetos/b2-thumb.jpg"
+              class="shadow animate slideUp"
+              alt="B2 Agência full time job"
+            />
+            <div class="intro">
+              <h4>B2 Agência</h4>
+              <p>Full time Job</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="tre.html" class="projeto" data-bg="tre">
+            <img
+              src="../assets/img/projetos/tre-thumb.jpg"
+              class="shadow animate slideUp"
+              alt="Intership at Tribubnal Regional Eleitoral"
+            />
+            <div class="intro">
+              <h4>TRE</h4>
+              <p>Internship</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <a href="index.html" class="btn2 animate">view work</a>
+    </section>
+    <section id="sobre-mim">
+      <h2 class="animate">About me</h2>
+      <div class="row">
+        <div class="container">
+          <aside class="animate slideLeft">
+            <div class="foto">
+              <img
+                src="../assets/img/perfil-dcb.jpg"
+                alt="Daniela C. Barbosa"
+                class="shadow"
+              />
+              <h6>Name</h6>
+              <p>Daniela C. Barbosa</p>
+              <h6>Age</h6>
+              <p>26 years old</p>
+              <h6>College Degree</h6>
+              <p>Graphic Design (UFG)</p>
+              <div class="center">
+                <a href="cv-danielacb-english.pdf" target="_blank" class="btn3"
+                  >full resume</a
+                >
+              </div>
+            </div>
+          </aside>
+          <div class="bio animate slideRight">
+            <p>
+              &gt;&gt; Hello, my name is Daniela and I’m 26 years old, I’m from
+              Goiânia, Goiás, currently living in São Paulo.
+            </p>
+            <p>
+              I have a college degree in Graphic Design and have been working in
+              this field since 2011 and now I’m searching for a job opportunity
+              to work with Digital Design.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="sobre.html" class="btn2 animate">view more</a>
+    </section>
+    <footer id="contato">
+      <h2 class="animate">Contact</h2>
+      <div class="center animate">
+        <p>
+          <span>E-mail:</span>
+          <a href="mailto:contato@danielacb.com">hireme@danielacb.com</a>
+        </p>
+        <p><span>Phone:</span> &plus;55 (11) 98103-8204</p>
+        <p><span>WhatsApp:</span> &plus;55 (62) 98102-9102</p>
+        <ul class="social">
+          <li>
+            <a
+              href="https://dribbble.com/danielacb"
+              class="dribbble"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/danicbarbosa"
+              class="facebook"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/danictudo/"
+              class="instagram"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/cbdaniela/"
+              class="linkedin"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://vimeo.com/danielacb"
+              class="vimeo"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="center">Copyright © 2017 Daniela C. Barbosa</p>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../assets/js/slick.min.js" type="text/javascript"></script>
-    <script src="../assets/js/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script
+      src="../assets/js/jquery.fancybox.min.js"
+      type="text/javascript"
+    ></script>
     <script src="../assets/js/main.js" type="text/javascript"></script>
-    
-<!--
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o)
-                , m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-71026165-1', 'auto');
-        ga('send', 'pageview');
-    </script>
--->
-
-</body>
-
+  </body>
 </html>
