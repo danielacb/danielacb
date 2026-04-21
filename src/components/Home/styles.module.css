@@ -1,0 +1,85 @@
+header {
+  @apply w-full h-full relative;
+  background: #15151d;
+  background-image: url('/bg-header.png');
+  background-size: 800px;
+  background-repeat: repeat;
+}
+
+.overlay {
+  pointer-events: none;
+  z-index: 2;
+
+  &,
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  &::before {
+    content: '';
+    opacity: 0.2;
+    background:
+      linear-gradient(rgba(10, 10, 10, 0.2), rgba(0, 0, 0, 0.4)),
+      repeating-linear-gradient(
+        0,
+        transparent,
+        transparent 2px,
+        white 5px,
+        white 5px
+      );
+  }
+}
+
+.text {
+  position: absolute;
+  top: 33.333%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: blur(2px);
+  text-align: center;
+  opacity: 0;
+}
+
+.text::before {
+  content: '';
+  background-color: #424252;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  filter: blur(40px);
+  opacity: 90%;
+  z-index: -1;
+}
+
+.title {
+  font-family: 'Akira Expanded', sans-serif;
+  text-wrap: balance;
+  font-size: clamp(2.5rem, 8vw, 100px);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: clamp(2.5rem, 8vw, 4rem);
+  color: #ff6a3d;
+  text-shadow:
+    0 0 50px rgba(255, 60, 0, 0.7),
+    0 0 25px #ff3b1a,
+    0 0 10px #ff2d00;
+}
+
+.subtitle {
+  color: #fff;
+  margin-top: 24px;
+  text-wrap: pretty;
+  font-family: 'VT323', monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.5rem, 4vw, 2.6rem);
+  line-height: 1.5rem;
+}
