@@ -1,5 +1,19 @@
 @import 'tailwindcss';
 
+:root {
+  --dark-blue: #0e0f17;
+  --blue: #111e33;
+  --dark-black: #131318;
+  --black: #15151d;
+  --white: #f3f3f3;
+  --dark-gray: #1f1f26;
+  --gray: #a1a1a5;
+  --orange: #ff4a00;
+  --orange-rgb: 255, 74, 0;
+  --font-mono: 'VT323', monospace;
+  --font-akira: 'Akira Expanded', sans-serif;
+}
+
 html,
 body,
 #root {
@@ -10,4 +24,15 @@ body,
 body {
   background-color: #0e0f17;
   -webkit-font-smoothing: antialiased;
+}
+
+a {
+  box-shadow: inset 0 -0.2rem 0 0 var(--orange);
+  transition: box-shadow 0.2s;
+  padding: 0 2px;
+
+  &:hover {
+    filter: blur(0.5px);
+    box-shadow: inset 0 -1.25rem 0 0 var(--orange);
+  }
 }

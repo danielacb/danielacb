@@ -3,6 +3,7 @@ import fx from 'glfx';
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import type { GlfxCanvas, GlfxTexture } from 'glfx';
+import { animateHome } from './animations';
 
 export const ProfileCanvas = () => {
   const sourceRef = useRef<HTMLCanvasElement>(null);
@@ -174,35 +175,16 @@ export const ProfileCanvas = () => {
           shadowBlur: 20,
           duration: 1.5,
           ease: 'power2.out',
-        })
-        .to(
-          '#header-text',
-          { opacity: 1, duration: 1, ease: 'expo.out' },
-          '<-0.5'
-        )
-        .fromTo(
-          ['#header-text h1', '#header-text h2'],
-          {
-            opacity: 0,
-            scale: 0.9,
-          },
-          {
-            opacity: 1,
-            scale: 1,
-            duration: 1,
-            ease: 'expo.out',
-            stagger: 0.1,
-          },
-          '<'
-        );
+        });
+
+      animateHome(tl);
     };
 
     if (image.complete) {
       init();
     } else {
       image.onload = init;
-      image.onerror = () =>
-        console.error('Failed to load /profile-image.jpg');
+      image.onerror = () => console.error('Failed to load /profile-image.jpg');
     }
 
     return () => {
