@@ -34,7 +34,7 @@ export const Header = () => {
         </p>
         <p>
           This portfolio is a work in progress (aren’t they always?), but you
-          can check out my old portfolio <a href="/2017">here</a>.
+          can check out my old portfolio <a href="/2017/en/">here</a>.
         </p>
       </div>
       <nav id="header-nav" className={styles.nav}>
