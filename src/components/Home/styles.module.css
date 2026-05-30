@@ -43,6 +43,7 @@ header {
   text-align: center;
   opacity: 0;
   transform-origin: center;
+  will-change: opacity;
 }
 
 .text::before {
@@ -74,6 +75,7 @@ header {
     0 0 10px #ff2d00;
   opacity: 0;
   transform: scale(0.9);
+  will-change: opacity, transform;
 }
 
 .subtitle {
@@ -88,6 +90,7 @@ header {
   text-transform: uppercase;
   opacity: 0;
   transform: scale(0.9);
+  will-change: opacity, transform;
 }
 
 .nav {
@@ -101,6 +104,7 @@ header {
     display: inline-block;
     opacity: 0;
     transform: scale(0.75);
+    will-change: opacity, transform;
   }
 }
 
@@ -133,6 +137,7 @@ header {
     background-color: var(--orange);
     opacity: 0;
     z-index: -1;
+    will-change: transform, opacity, filter;
   }
 
   &:hover {
@@ -179,6 +184,7 @@ header {
   opacity: 0;
   bottom: 100px;
   transform: translateY(250px);
+  will-change: opacity, transform;
 
   h4 {
     font-family: var(--font-akira);

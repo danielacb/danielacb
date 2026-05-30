@@ -28,7 +28,7 @@ export const animateHome = (tl: gsap.core.Timeline) =>
         scale: 1,
         duration: 1,
         ease: 'expo.out',
-        stagger: 0.3,
+        stagger: 0.2,
       },
       '<0.3'
     )
